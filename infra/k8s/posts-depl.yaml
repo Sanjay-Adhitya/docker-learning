@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: posts
-          image: sanjayadhi/posts:0.0.2
+          image: sanjayadhi/posts:latest
+          imagePullPolicy: Never
           resources:
             limits:
               memory: "128Mi"
