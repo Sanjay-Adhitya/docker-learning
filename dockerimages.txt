@@ -20,4 +20,5 @@ k8s cmds:
                                                           kubectl get deployments
                                                           kubectl describe deployments [deployment_name]
                                                           kubectl delete deployment [deployment_name]
+                                                          kubectl rollout restart deployment posts-depl
 

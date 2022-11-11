@@ -41,6 +41,6 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
-  console.log('version:2')
+  console.log('version:Latest')
   console.log("Listening on 4000");
 });
