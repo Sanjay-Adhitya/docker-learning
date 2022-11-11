@@ -1,0 +1,17 @@
+apiVersion: v1  # v1 pool
+kind: Pod       # pod is a object in side a v1 of kubernatics
+metadata:
+  name: posts   # pod name
+  labels:
+    name: posts # same as above
+# spec is list of config what should pod do.
+spec:
+  containers: # required properties we can have many.
+  - name: posts # when using different container in same pod give different names.
+    image: sanjayadhi/posts:0.0.1 # this is very important to have ur acual user name of docker 
+                                  # hub account if you don't give 0.0.1 it will take latest. error may come later.
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+
