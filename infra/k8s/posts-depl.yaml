@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: posts-depl
+
+spec:
+  replicas: 1 # number pods
+  selector: # which pod to manage
+    matchLabels:
+      app: posts
+
+  template: # how a pod look like
+    metadata:
+      labels:
+        app: posts
+    spec:
+      containers:
+        - name: posts
+          image: sanjayadhi/posts:0.0.1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"

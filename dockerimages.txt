@@ -17,3 +17,7 @@ k8s cmds:
                                                           kubectl apply -f [config file name]
                                                           kubectl describe pods posts
                                                           kubectl delete pod [pod_name]
+                                                          kubectl get deployments
+                                                          kubectl describe deployments [deployment_name]
+                                                          kubectl delete deployment [deployment_name]
+
