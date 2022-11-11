@@ -1,1 +1,8 @@
-posts(1) - 37486c16c71d (sa/post)
+posts 1 - docker run 5a54a354af7aba76cf7b62e84cd66b721a7d672774517f7ad23ec1a1cf87fe8f   (sa/post)
+client 1 - docker run f8898980926f1a0d7af5266be804ae9ccdb5cddac4c30ed2cb61ca86b05d9637
+comment 1 - docker run a0fea5b773c00617087d6f43cfdd2953baa434e752052975f47a6167721001ef
+moderation - docker run 734086734bdd238f24b5af37090e3753eb69071f59e54afcf50a6b8308c1c90a 
+event-bus - docker run e31e74e53fe1eaf6f0b77edd3ad2e67b687dfff5aa6fd8fdcd34ba71ea9c38c6
+query - docker run f4ae8cbe1f3be43c440e2a3fa236099d358944861782ab302e42c30ad90db70f  
+
+docker build .
