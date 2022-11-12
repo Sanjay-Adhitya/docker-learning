@@ -30,3 +30,7 @@ service => nodeport this is the port access the service.
 
 when ever we create a request from one service 
 it will go to cluster ip service to connect another services.
+
+When ever we did some changes into the code we need to rebuild the image with same tag name as before, push it to docker hub and restore and restart the deployments.
+
+CODE : kubectl rollout restart deployment [deployment_name]
