@@ -17,7 +17,7 @@ spec:
       containers:
         - name: comments
           image: sanjayadhi/comments:latest
-          imagePullPolicy: Never # importent
+          # imagePullPolicy: Never # importent
           resources:
             limits:
               memory: "128Mi"

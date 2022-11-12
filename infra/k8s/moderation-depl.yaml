@@ -17,7 +17,7 @@ spec:
       containers:
         - name: moderation
           image: sanjayadhi/moderation:latest
-          imagePullPolicy: Never # importent
+          # imagePullPolicy: Never # importent
           resources:
             limits:
               memory: "128Mi"

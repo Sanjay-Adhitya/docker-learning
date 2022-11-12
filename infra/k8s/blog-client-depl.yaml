@@ -17,7 +17,7 @@ spec:
       containers:
         - name: blog-client
           image: sanjayadhi/blog-client:latest
-          imagePullPolicy: Never # importent
+          # imagePullPolicy: Never # importent
           resources:
             limits:
               memory: "128Mi"
