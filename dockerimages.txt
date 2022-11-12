@@ -21,4 +21,12 @@ k8s cmds:
                                                           kubectl describe deployments [deployment_name]
                                                           kubectl delete deployment [deployment_name]
                                                           kubectl rollout restart deployment posts-depl
+                                                          kubectl get services
 
+
+dockere => image => kubectl => pod (with deployment) => 
+service => nodeport this is the port access the service. 
+=> cluster ip to conteact other ports.
+
+when ever we create a request from one service 
+it will go to cluster ip service to connect another services.
