@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blog-client-depl
+
+spec:
+  replicas: 1 # number pods
+  selector: # which pod to manage
+    matchLabels:
+      app: blog-client
+
+  template: # how a pod look like
+    metadata:
+      labels:
+        app: blog-client
+    spec:
+      containers:
+        - name: blog-client
+          image: sanjayadhi/blog-client:latest
+          imagePullPolicy: Never # importent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: blog-client-srv
+spec:
+  selector:
+    app: blog-client # same label
+  ports:
+    - name: blog-client
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+
